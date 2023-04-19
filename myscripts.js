@@ -18,7 +18,9 @@ closeBtn.addEventListener('click', (e) => {
 portfolioLink.addEventListener('click', () => {
   document.getElementById('myLinks').style.width = '0%';
 });
-
+aboutLink.addEventListener('click', () => {
+  document.getElementById('myLinks').style.width = '0%';
+});
 contactLink.addEventListener('click', () => {
   document.getElementById('myLinks').style.width = '0%';
 });
