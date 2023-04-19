@@ -1,39 +1,3 @@
-<a name="readme-top"></a>
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Hello Microverse</b></h3>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -48,48 +12,34 @@ After you're finished please remove all the comments and instructions!
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
+  - [Run Linters](#run-tests)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
+- [🤝 Contribute](#contribute)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Hello Microverse] <a name="about-project"></a>
+# 🧑‍💻 Portfolio <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> **It is my personal portfolio project and it is for my learning purposes in order to become good software developer and it is not only a project but also a way to know my skills and with the help of it I can be able to showcase my hard-work that I have done in past or whatever I will do in future.**
 
-**[Hello Microverse]** is a first project for code review.
+**Personal Portfolio** is a vanilla-js blog website.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+> Leaderboard is front-end project
 
 <details>
-  <summary>Client</summary>
+<summary>Technologies</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://html.com/">HTML</a></li>
+    <li><a href="https://sass-lang.com/">SASS/SCSS</a></li>
+    <li><a href="https://javascript.info/">JavaScript</a></li>
   </ul>
 </details>
 
@@ -97,11 +47,8 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> Anyone can see my latest projects that I created and know more about me.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,9 +56,9 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+> Link to your deployed project.
 
-- [Live Demo Link](https://google.com)
+- **coming soon... 🚀**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,83 +66,44 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+> In order to start with this project do as follows :
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- Good Knowlege on HTML and CSS (Semantics,Box-Model, Background style and Image Tag, Flexbox, Grid and Media Query)
+ - Install Node.js, Npm Copy the linters from https://github.com/microverseinc/linters-config/tree/master/html-css
+ - Please install the HTML, CSS and Lighthouse linters using Node Package Manager by typing below commands
+   
+   * npm install -g @lhci/cli@0.7.x (For LightHouse linter)
+   * npm install --save-dev hint@7.x
+          [ -f .hintrc ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.hintrc (For HTML linter)
+   * npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+          [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.stylelintrc.json
 
 ### Setup
 
-Clone this repository to your desired folder:
+- **use "git clone https://github.com/skyv26/contact-form.git"**
+  - `cd contact-form`
 
-<!--
-Example commands:
+### Run Linters
 
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
+I have added the linters or tests in order to avoid anykind of typos and ensure the good practices in this project. So while using this repository if you need to check your work no matters have worked on html, css and js you can use below commands
 
-### Install
+- In order to run the linter test on `index.html` or any html file. Use below command
 
-Install this project with:
+  `npx hint .`
 
-<!--
-Example command:
+- To run linter test on stylesheets. Use below command
 
-```sh
-  cd my-project
-  gem install
-```
---->
+  `npx stylelint "**/*.{css,scss}"`
 
-### Usage
+- To run linter test on javascript files. Use below command
 
-To run the project, execute the following command:
+  `npx eslint .`
 
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
+**it will automatically correct the errors**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -205,11 +113,31 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👨‍💻 **Adebowale Adegboye**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+   - GitHub: https://github.com/ademibowale
+   - Twitter: https://twitter.com/Ademibowale1
+   - LinkedIn: https://www.linkedin.com/in/adebowale-adegboye-143568221/
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> In upcoming weeks I will add some features as mentioned below
+
+- [ ] **Add full features like sign-up, sign-in and API**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+> Write a message to encourage readers to support your project
+
+If you like this project then please give a ⭐️ and also share your feedback using github_issues.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -221,26 +149,18 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
-
-## ⭐️ Show your support <a name="support"></a>
-
-> Write a message to encourage readers to support your project
-
-If you like this project...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- ACKNOWLEDGEMENTS -->
+
+## Acknowledgments
+
+Thanks to everyone who helped me ❤️
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
