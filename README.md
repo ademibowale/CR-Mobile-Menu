@@ -32,7 +32,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Leaderboard is front-end project
+> CR Mobile-Menu is front-end project
 
 <details>
 <summary>Technologies</summary>
@@ -84,8 +84,8 @@ To get a local copy up and running, follow these steps.
 
 ### Setup
 
-- **use "git clone https://github.com/skyv26/contact-form.git"**
-  - `cd contact-form`
+- **use "git clone https://github.com/ademibowale/CR-Mobile-Menu.git"**
+  - `Mobile-Menu`
 
 ### Run Linters
 
